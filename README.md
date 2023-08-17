@@ -1,4 +1,4 @@
-![документ](https://github.com/jmailgew5/QA-ENGINEER/assets/142330325/77c9341f-7968-40ed-8070-a8078ffd53d4)QA инженер
+QA инженер
 
 Проводила тестирование сайта: https://teachers.skyeng.ru/schedule :
 
@@ -14,6 +14,78 @@
 
 
 Опыт написания чек листов (например к сайту: https://cloud.ru/ru): https://docs.google.com/spreadsheets/d/1i9Fde0qkjNQSA48mW3uuMjaym68n9ovf/edit?usp=sharing&ouid=112700401287224399501&rtpof=true&sd=true
+
+Опыт написания SQL запросов по следующим данным 
+
+![документ](https://github.com/jmailgew5/QA-ENGINEER/assets/142330325/77c9341f-7968-40ed-8070-a8078ffd53d4)
+
+-- Создание таблицы animal_classes
+
+CREATE TABLE animal_classes (  
+    id INTEGER,
+    class TEXT
+);
+
+-- Проверка  таблицы animal_classes
+
+SELECT *
+FROM animal_classes ;
+
+-- Создание таблицы animal_info
+
+CREATE TABLE animal_info (  
+    name TEXT,
+    class INTEGER,
+	owner TEXT
+);
+
+-- Проверка таблицы animal_info
+
+SELECT *
+FROM animal_info ;
+
+-- Ввод данных в таблицу animal_classes
+
+
+INSERT INTO animal_classes (id, class) 
+VALUES (1, 'кошка'),
+       (2, 'собака');
+
+-- Ввод данных в таблицу animal_info
+	   
+INSERT INTO animal_info(name, class, owner) 
+VALUES ('Кити', 1, 'Ваня'),
+       ('Мити', 2, 'Ваня'),
+	   ('Пити', 1, 'Петя');
+	   
+-- Сколько всего животных у Вани
+
+SELECT owner, COUNT (*)
+FROM animal_info
+WHERE owner = 'Ваня'
+GROUP BY owner ;
+
+
+-- Уникальные имена всех кошек отсортированные по алфавиту
+
+SELECT DISTINCT (i.name)
+FROM animal_info AS i
+INNER JOIN animal_classes AS c
+ON c.id = i.class
+WHERE c.class = 'кошка'
+ORDER BY name ;
+
+
+
+-- Найти количество животных каждого класса. Вывести количество и имя класса
+
+SELECT COUNT (i.class),
+c.class
+FROM animal_classes AS c
+INNER JOIN animal_info AS i
+ON c.id = i.class
+GROUP BY c.class ;
+
 
 
 
