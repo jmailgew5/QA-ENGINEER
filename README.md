@@ -1,6 +1,6 @@
-QA инженер
+![документ](https://github.com/jmailgew5/QA-ENGINEER/assets/142330325/77c9341f-7968-40ed-8070-a8078ffd53d4)QA инженер
 
-проводила тестирование сайта Сайт: https://teachers.skyeng.ru/schedule :
+Проводила тестирование сайта: https://teachers.skyeng.ru/schedule :
 
 * первоначально было проведено smoke тестирование. При прохождении smoke тестов (https://app.qase.io/project/LWN) не выявлено дальнейших препятствий для проведения функционального тестирования. (test run: https://app.qase.io/run/LWN/dashboard/5)
 
@@ -14,4 +14,7 @@ QA инженер
 
 
 Опыт написания чек листов (например к сайту: https://cloud.ru/ru): https://docs.google.com/spreadsheets/d/1i9Fde0qkjNQSA48mW3uuMjaym68n9ovf/edit?usp=sharing&ouid=112700401287224399501&rtpof=true&sd=true
-Опыт написания SQL простых SQL запросов
+
+
+
+
